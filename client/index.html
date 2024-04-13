@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Theseus and the Minotaurus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/keyboard-css@1.2.4/dist/css/main.min.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+    <div id="infoPanel">
+      <h1>Theseus and the Minotaurus</h1>
+      <p>Try to help Theseus escape from the maze and make sure the Minotaur can't catch him!</p>
+      <h3>Controls</h3>
+      <div class="arrows">
+        <div class="container">
+          <div class="row">
+            <button class="kbc-button" data-keyboard-key="ArrowUp">↑</button>
+          </div>
+          <div class="row">
+            <button class="kbc-button" data-keyboard-key="ArrowLeft">←</button>
+            <button class="kbc-button" data-keyboard-key="ArrowDown">↓</button>
+            <button class="kbc-button" data-keyboard-key="ArrowRight">→</button>
+          </div>
+        </div>
+        <p>Use the arrow keys on your keyboard to move Theseus.</p>
+      </div>
+      <pre><p><span class="buttons"><button class="kbc-button" data-keyboard-key=" ">Space</button>: </span> Let Theseus wait in place</p></pre>
+      <pre><p><span class="buttons"><button class="kbc-button" data-keyboard-key="r">R</button>: </span> Reset current level</p></pre>
+      <pre><p><span class="buttons"><button class="kbc-button" data-keyboard-key="n">N</button>: </span> Go to next level</p></pre>
+      <pre><p><span class="buttons"><button class="kbc-button" data-keyboard-key="p">P</button>: </span> Go to previous level</p></pre>
+    </div>
+    <div>
+      <h3 class="leftText">Level: <span id="level">0</span></h3>
+      <h3 class="rightText">Amount of steps: <span id="score">0</span></h3>
+      <div class="seperator"></div>
+      <h3 class="rightText">Best score: <span id="highscore">0</span></h3>
+      <canvas id="canvas" width="500" height="500">
+        Canvas? No comprendo.
+      </canvas>
+    </div>
+    </div>
+  </body>
+<script src="InputManager.js"></script>
+<script src="GameObject.js"></script>
+<script src="Game.js"></script>
+<script src="init.js"></script>
+</html>
